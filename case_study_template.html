@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[Project Name] - Stefanie Sequeira</title>
+    <link href="/img/favicon.png" rel="icon">
+    <meta name="description" content="[Brief project description with key outcomes and role]">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .hero-section { min-height: 60vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .project-meta { background: #f8f9fa; border-radius: 12px; }
+        .section-divider { height: 2px; background: linear-gradient(90deg, #667eea, #764ba2); margin: 3rem 0; }
+        .outcome-card { border: none; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-radius: 12px; transition: transform 0.3s ease; }
+        .outcome-card:hover { transform: translateY(-5px); }
+        .process-step { position: relative; padding-left: 3rem; }
+        .process-step::before { content: attr(data-step); position: absolute; left: 0; top: 0; background: #667eea; color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.9rem; }
+        .img-showcase { border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); margin: 2rem 0; }
+        .back-link { color: #667eea; text-decoration: none; font-weight: 500; }
+        .back-link:hover { color: #764ba2; }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+        <div class="container">
+            <a class="back-link" href="/work.html">
+                <i class="bi bi-arrow-left me-2"></i>Back to Work
+            </a>
+            <a class="navbar-brand ms-auto" href="/">Stefanie Sequeira</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">[Project Title]</h1>
+                    <p class="lead mb-4">[One compelling sentence about the project impact or transformation]</p>
+                    <div class="project-meta text-dark p-4 bg-white bg-opacity-90 rounded">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <strong>Client:</strong><br>[Client Name]
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Role:</strong><br>[Your Role]
+                            </div>
+                            <div class="col-md-4">
+                                <strong>Timeline:</strong><br>[Duration]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="[hero-image.jpg]" alt="[Project hero image description]" class="img-fluid img-showcase">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        
+        <!-- Challenge & Solution -->
+        <section class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <h2 class="h3 fw-bold mb-3">The Challenge</h2>
+                <p class="mb-4">[2-3 sentences about the core problem. Focus on user pain points and business impact.]</p>
+                
+                <h3 class="h5 fw-semibold mb-2">Key Problems:</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">• [Specific problem 1]</li>
+                    <li class="mb-2">• [Specific problem 2]</li>
+                    <li class="mb-2">• [Specific problem 3]</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <h2 class="h3 fw-bold mb-3">The Solution</h2>
+                <p class="mb-4">[2-3 sentences about your approach and what you delivered.]</p>
+                
+                <h3 class="h5 fw-semibold mb-2">My Focus:</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">• [Key contribution 1]</li>
+                    <li class="mb-2">• [Key contribution 2]</li>
+                    <li class="mb-2">• [Key contribution 3]</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Process Overview -->
+        <section class="mb-5">
+            <h2 class="h3 fw-bold mb-4">Process</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="process-step" data-step="1">
+                        <h4 class="h6 fw-semibold">[Discovery/Research]</h4>
+                        <p class="small text-muted">[Brief description of research activities]</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="process-step" data-step="2">
+                        <h4 class="h6 fw-semibold">[Define/Strategy]</h4>
+                        <p class="small text-muted">[Brief description of strategy work]</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="process-step" data-step="3">
+                        <h4 class="h6 fw-semibold">[Design/Prototype]</h4>
+                        <p class="small text-muted">[Brief description of design work]</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="process-step" data-step="4">
+                        <h4 class="h6 fw-semibold">[Test/Refine]</h4>
+                        <p class="small text-muted">[Brief description of validation]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Work Showcase -->
+        <section class="mb-5">
+            <h2 class="h3 fw-bold mb-4">[Key Deliverable Title]</h2>
+            <p class="mb-4">[1-2 sentences explaining this section. What you're showing and why it matters.]</p>
+            
+            <img src="[showcase-image-1.jpg]" alt="[Detailed description of what this image shows]" class="img-fluid img-showcase">
+            
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <p>[Brief explanation of what's shown in the image and its impact.]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional: Second Showcase Section -->
+        <section class="mb-5">
+            <h3 class="h4 fw-bold mb-3">[Another Key Deliverable]</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="[showcase-image-2.jpg]" alt="[Description]" class="img-fluid img-showcase">
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <p>[Explanation of this work and its importance.]</p>
+                    <blockquote class="blockquote-footer mt-3">
+                        <cite>"[Optional: Brief client quote or key insight]"</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Outcomes -->
+        <section class="mb-5">
+            <h2 class="h3 fw-bold mb-4 text-center">Outcomes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card outcome-card h-100 p-4 text-center">
+                        <div class="display-4 fw-bold text-primary mb-3">[Metric]</div>
+                        <h4 class="h6 fw-semibold">[Improvement Description]</h4>
+                        <p class="small text-muted">[Brief context about this metric]</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card outcome-card h-100 p-4 text-center">
+                        <div class="display-4 fw-bold text-primary mb-3">[Metric]</div>
+                        <h4 class="h6 fw-semibold">[Improvement Description]</h4>
+                        <p class="small text-muted">[Brief context about this metric]</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card outcome-card h-100 p-4 text-center">
+                        <div class="display-4 fw-bold text-primary mb-3">[Metric]</div>
+                        <h4 class="h6 fw-semibold">[Improvement Description]</h4>
+                        <p class="small text-muted">[Brief context about this metric]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Learnings -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="h3 fw-bold mb-4">Key Takeaways</h2>
+                    <div class="bg-light p-4 rounded">
+                        <p class="mb-3"><strong>What worked:</strong> [1-2 sentences about successful approaches]</p>
+                        <p class="mb-3"><strong>What I learned:</strong> [1-2 sentences about insights gained]</p>
+                        <p class="mb-0"><strong>Next time:</strong> [1 sentence about what you'd do differently]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Next Project -->
+    <footer class="bg-light py-5">
+        <div class="container text-center">
+            <h3 class="h4 mb-4">More Work</h3>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <a href="[next-project-1.html]" class="text-decoration-none">
+                        <div class="card border-0 bg-white">
+                            <div class="card-body">
+                                <h5 class="card-title">[Next Project 1]</h5>
+                                <p class="card-text small text-muted">[Brief description]</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="[next-project-2.html]" class="text-decoration-none">
+                        <div class="card border-0 bg-white">
+                            <div class="card-body">
+                                <h5 class="card-title">[Next Project 2]</h5>
+                                <p class="card-text small text-muted">[Brief description]</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="/work.html" class="btn btn-outline-primary mt-3">View All Work</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
