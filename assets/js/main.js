@@ -1,10 +1,4 @@
-/**
-* Template Name: MyPortfolio
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Updated: Aug 08 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+// To do: Clean up with Purecounter
 
 (function() {
   "use strict";
@@ -101,7 +95,7 @@
     });
   }
   window.addEventListener('load', aosInit);
-
+  
   /**
    * Initiate glightbox
    */
@@ -160,5 +154,10 @@
   }
 
   window.addEventListener("load", initSwiper);
+
+     /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
 
 })();

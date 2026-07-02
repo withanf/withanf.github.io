@@ -13,6 +13,7 @@
   --accent-color: #50b1b1;
   --surface-color: #ffffff;
   --contrast-color: #ffffff; /* For accessibility - test this */
+  /* --border-color: #8d837c; */
 }
 
 /* Nav colors */
@@ -46,7 +47,7 @@
 }
 
 /*--------------------------------------------------------------
-# General
+# General & Bootstrap Overrides
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
@@ -80,6 +81,19 @@ h6 {
   /* font-weight: 300; */
 }
 
+.card {
+  border-radius: 8px;
+  /* padding: 5px 25px; */
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.border, .border-bottom, .border-top {
+  border-color: rgba(209, 195, 187, 0.9) !important;
+}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -949,6 +963,11 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.purecounter {
+  font-size: 2em;
+  font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
@@ -1016,11 +1035,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Case Study Page
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+#case-header {
+  min-height: 60vh;
+
 }
+
 
 /*--------------------------------------------------------------
 # Contact Section
