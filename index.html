@@ -2,180 +2,264 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stefanie Sequeira - Product Designer</title>
-    <link href="/img/favicon.png" rel="icon">
-    <meta name="description" content="Stefanie is a multidisciplinary product designer with a focus on UX, strategy, and mentorship.">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Stefanie Sequeira</title>
+    <meta name="description" content="Stefanie is a multidisciplinary product designer with a focus on UX, strategy, mentorship, and stakeholder consensus.">
 		<meta name="keywords" content="Stefanie Stef with an F Sequeira Product UX Interaction XD Designer Design Strategy">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon"> <!-- Make a real one later -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
 
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLT1FQNKSX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-      gtag('config', 'G-WLT1FQNKSX');
-    </script>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-    <!-- <script>
-      import { PowerGlitch } from 'powerglitch'
-      PowerGlitch.glitch('.glitch')
-    </script> -->
+</head>
 
-    <style>
-      :root{
-        --bs-body-bg: #1B1042;
-      }
-      .nav-bg {
-        background: var(--color-primary-darker-tint);
-      }
-    </style>
+<body class="index-page">
 
-  </head>
+  <a class="visually-hidden-focusable" href="#content">Skip to main content</a>   
 
-  <body class="d-flex flex-column min-vh-100 p-0 container-fluid">
-    <!-- NOTE: min-vh-100 in body, wrapper flex-grow-1 in the content. This puts footer at bottom of page -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <!-- skip link -->
-    <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="logo d-flex me-auto me-xl-0"><img src="assets/img/logo.png" alt="Logo"></a></li>
+          <li><a href="index.html" class="active">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li><a href="mailto:stefaniesequeira@pm.me" target="_blank">Contact</a></li>
+        </ul>
+        <!-- Load bearing hamburger menu forces the preloader while testing local?? Remove eventually -->
+        <i class="mobile-nav-toggle d-none bi bi-list"></i>
+      </nav>
 
-    <!-- navigation -->
-    <header class="mb-auto"><nav class="navbar nav-bg navbar-expand-lg p-3">
-      <div class="container-fluid">
+      <div class="header-social-links d-none d-md-block">
+        <a href="https://linkedin.com/in/stefaniesequeira" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://stefwithanf.bsky.social" class="bluesky"><i class="bi bi-bluesky"></i></a>
+        <a href="https://dribbble.com/stefaniewithanf" class="dribbble"><i class="bi bi-dribbble"></i></a>
+      </div>
 
-        <a class="navbar-brand" aria-current="page" href="/index.html">Stefanie Sequeira</a>
+    </div>
+  </header>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-list fs-2"></i>
-        </button>
+  <main class="main">
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-0 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="/work.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:stefaniesequeira@pm.me" target="_blank">E-mail <i class="bi bi-box-arrow-up-right smaller icon-color"></i></a>
-            </li>
+    <section class="page-title container" data-aos="fade-in">
+      <h1><strong>Stefanie Sequeira</strong> is a product designer, strategist, and stakeholder whisperer at <a href="https://studio.ey.com">EY Design Studio</a> in New York, NY.</h1>
+    </section>
+
+    <!-- Portfolio Section -->
+     <!-- Don't forget pics are 4:3, for any new images the max render size is 416x312 -->
+    <section id="portfolio" class="portfolio section" data-aos="fade-in">
+
+      <div class="container">
+        <!-- <img src="assets/img/logo.svg" alt=""> -->
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row align-items-center">
+            <div class="col-lg-7 portfolio-info">
+              <h3>Featured work</h3>
+              <p>More available on request.</p>
+            </div>
+            <div class="col-lg-5 text-center text-lg-end">
+              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-case">Case Study</li>
+                <li data-filter=".filter-pitch">Pitch</li>
+                <li data-filter=".filter-explore">Exploration</li>
+                <!-- <li data-filter=".filter-books">Books</li> -->
+              </ul><!-- End Portfolio Filters -->
+            </div>
+          </div>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-case" style="position: absolute; left: 0px; top: 0px;">
+              <div class="portfolio-content h-100"><a href="portfolio-details.html">
+                <img src="assets/img/portfolio/pharma.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Pharma Startup</h4>
+                  <p>Digital patient experience</p>
+                </div>
+              </a></div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-case" style="position: absolute; left: 440px; top: 0px;">
+              <div class="portfolio-content h-100"><a href="portfolio-details.html">
+                <img src="assets/img/portfolio/soco.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Southern Company Gas</h4>
+                  <p>Residential bill redesign</p>
+                </div>
+              </a></div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pitch" style="position: absolute; left: 880px; top: 0px;">
+              <div class="portfolio-content h-100"><a href="portfolio-details.html">
+                <img src="assets/img/portfolio/wawa.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Wawa</h4>
+                  <p>Store kiosk UX enhancement</p>
+                </div>
+              </a></div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-case" style="position: absolute; left: 0px; top: 336px;">
+              <div class="portfolio-content h-100"><a href="portfolio-details.html">
+                <img src="assets/img/portfolio/mazda.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Mazda</h4>
+                  <p>Future CX vision</p>
+                </div>
+              </a></div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pitch" style="position: absolute; left: 440px; top: 336px;">
+              <div class="portfolio-content h-100"><a href="portfolio-details.html">
+                <img src="assets/img/portfolio/mavia.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>EY</h4>
+                  <p>Agentic AI for marketers</p>
+                </div>
+              </a></div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-explore" style="position: absolute; left: 880px; top: 336px;">
+              <div class="portfolio-content h-100"><a href="portfolio-details.html">
+                <img src="assets/img/portfolio/nystickers.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>NY Studio Stickers</h4>
+                  <p>Branding, physical media</p>
+                </div>
+              </a></div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <h2>Clients</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/bny.svg" class="img-fluid" alt="BNY Mellon Pershing"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/comcast.png" class="img-fluid" alt="Comcast"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ey.png" class="img-fluid" alt="EY"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ga.png" class="img-fluid" alt="State of Georgia USA"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/mazda.png" class="img-fluid" alt="Mazda"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/ms.png" class="img-fluid" alt="Morgan Stanley"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/microsoft.png" class="img-fluid" alt="Microsoft"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/toyota.png" class="img-fluid" alt="Toyota"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/wawa.png" class="img-fluid" alt="Wawa"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/soco.png" class="img-fluid" alt="Southern Company"></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/clients/fed.webp" class="img-fluid" alt="United States Federal Government"></div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row pb-1 mb-3 border-bottom justify-content-between align-items-center">
+        <div class="col-6 ">
+          <h2>Let's stay in touch.</h2>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:StefanieSequeira@pm.me">StefanieSequeira@pm.me</a></li>
+            <li><i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/stefaniesequeira">LinkedIn.com/StefanieSequeira</a></li>
           </ul>
         </div>
-
       </div>
-    </nav></header>
+      <p class="">© with love and Bootstrap, <strong>Stefanie</strong>. All rights reserved. <a href="https://github.com/withanf/withanf.github.io/issues/new">Report a bug on Github</a></p>
+    </div>
+  </footer>
 
-    <!-- background video -->
-    <video autoplay loop muted disablepictureinpicture id="indexVideo" class="desktop translate-middle top-50 start-50">
-      <source src="/img/site/Index.mp4" type="video/mp4">
-    </video>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- <video autoplay muted id="indexVideo" class="mobile">
-      <source src="/img/BGvideo-mobile.mp4" type="video/mp4">
-    </video> -->
-    
-    <!-- main content -->
-    <main class="content container-xl wrapper">
-      <div class="container-fluid">
-        <div class="position-absolute top-50 start-50 translate-middle svg-color text-center ">
-          <!-- <h1><img src="/img/stefanie.png" class="container pe-none user-select-none" alt="Stefanie"></h1> -->
-          <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-            <svg width="100%" height="100%" viewBox="0.00 0.00 386.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g stroke-linecap="round" transform="translate(-1452.00, -1281.00)" id="Layer_2">
-              <path d="M1524.65,1316.51 C1524.65,1316.51 1528.43,1313.54 1528.43,1313.54 C1521.02,1316.12 1511.91,1320.84 1504.58,1325.23 C1498.12,1329.22 1485.30,1338.29 1480.31,1342.41 C1473.34,1348.16 1461.96,1359.98 1459.81,1362.72 C1458.77,1364.06 1456.98,1370.31 1456.52,1371.98 C1457.59,1373.36 1459.74,1375.25 1461.52,1376.20 C1463.48,1377.22 1479.89,1378.62 1486.32,1379.08 C1493.16,1379.70 1507.86,1381.57 1512.21,1382.92 C1515.69,1384.03 1519.93,1386.34 1522.86,1388.76 C1525.47,1390.96 1527.88,1396.14 1527.99,1399.01 C1528.05,1401.82 1526.13,1408.34 1524.57,1411.17 C1521.40,1416.82 1512.15,1427.42 1506.69,1432.14 C1500.58,1437.39 1488.29,1445.62 1482.55,1448.42 C1478.34,1450.45 1471.30,1452.39 1468.94,1452.18 C1466.49,1451.90 1463.87,1449.03 1462.44,1447.24" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-1"></path>
-              <path d="M1558.76,1313.33 C1558.32,1317.98 1556.95,1332.90 1556.03,1343.16 C1554.73,1358.53 1552.15,1390.40 1550.87,1406.89 C1550.08,1419.11 1549.83,1428.56 1550.07,1437.11 C1550.11,1438.50 1550.25,1441.74 1550.34,1442.89 C1550.38,1443.35 1550.44,1443.75 1550.53,1444.08" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-2"></path>
-              <path d="M1532.15,1381.30 C1533.93,1377.65 1537.23,1373.59 1539.71,1371.71 C1544.08,1368.46 1556.25,1363.53 1565.37,1361.29 C1569.01,1360.39 1577.05,1358.38 1579.95,1357.38 C1580.19,1357.30 1585.90,1354.90 1586.77,1354.53" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-3"></path>
-              <path d="M1564.79,1410.13 C1565.84,1409.89 1572.24,1407.35 1574.94,1405.81 C1579.94,1402.91 1590.76,1394.82 1596.13,1389.51 C1598.86,1386.80 1601.16,1383.64 1602.36,1381.13 C1603.25,1379.21 1604.20,1374.29 1603.47,1371.38 C1603.01,1369.69 1600.74,1366.80 1599.41,1366.43 C1597.87,1366.08 1594.96,1366.96 1593.65,1368.08 C1591.07,1370.41 1587.11,1376.07 1585.33,1379.34 C1581.95,1385.63 1577.99,1397.24 1575.87,1405.97 C1574.98,1409.67 1574.30,1415.02 1574.27,1419.59 C1574.28,1423.10 1575.51,1430.00 1576.02,1431.28 C1576.92,1433.47 1581.70,1438.71 1583.65,1439.83 C1585.85,1441.05 1592.04,1441.76 1594.98,1441.33 C1601.13,1440.37 1608.29,1436.54 1611.59,1433.90 C1612.36,1433.27 1615.93,1430.28 1617.00,1429.38" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-4"></path>
-              <path d="M1659.50,1320.34 C1661.48,1316.08 1662.50,1312.47 1661.97,1308.99 C1661.49,1306.25 1659.92,1301.29 1658.36,1298.01 C1657.26,1295.72 1653.42,1288.48 1651.94,1286.88 C1651.37,1286.29 1648.99,1285.15 1648.12,1284.95 C1646.63,1284.69 1644.31,1285.33 1642.26,1286.56 C1639.12,1288.52 1636.36,1291.89 1634.47,1295.13 C1632.59,1298.44 1630.38,1304.24 1629.51,1307.56 C1627.68,1314.83 1626.05,1328.90 1625.52,1336.89 C1625.23,1341.83 1625.16,1359.73 1625.23,1367.26 C1625.79,1384.59 1628.78,1414.22 1630.60,1430.61 C1631.85,1440.28 1633.33,1449.60 1634.57,1460.98 C1634.83,1463.38 1634.74,1464.48 1634.27,1465.96 C1634.27,1465.96 1630.58,1463.44 1630.58,1463.44" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-5"></path>
-              <path d="M1607.74,1406.68 C1610.53,1402.41 1613.70,1398.62 1617.61,1395.48 C1622.92,1391.28 1633.14,1384.90 1638.90,1382.79 C1644.32,1380.85 1651.98,1380.26 1654.97,1380.11" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-6"></path>
-              <path d="M1668.91,1388.57 C1671.95,1384.45 1674.57,1380.21 1674.60,1377.00 C1674.58,1376.20 1673.23,1375.13 1672.49,1375.26 C1670.18,1375.75 1665.11,1380.67 1663.35,1382.96 C1661.03,1386.02 1657.67,1391.50 1655.85,1395.24 C1654.14,1398.79 1651.60,1406.23 1650.88,1409.46 C1650.32,1412.10 1649.70,1418.86 1650.05,1421.84 C1650.25,1423.45 1650.81,1425.19 1651.57,1426.66 C1652.20,1427.76 1654.36,1429.07 1656.28,1429.54 C1657.93,1429.91 1663.53,1427.99 1666.01,1425.90 C1668.48,1423.75 1672.20,1418.19 1673.65,1414.98 C1674.83,1412.27 1676.30,1406.52 1676.73,1403.68 C1676.89,1402.53 1677.14,1399.69 1677.16,1398.62 C1677.16,1397.16 1676.93,1393.87 1676.67,1391.62 C1675.80,1384.79 1675.57,1383.59 1675.24,1382.47 C1675.32,1386.75 1678.19,1408.01 1679.13,1412.58 C1679.61,1414.94 1681.63,1423.06 1683.13,1425.07 C1684.06,1426.25 1687.02,1427.24 1688.53,1426.93 C1689.34,1426.74 1695.02,1423.91 1695.24,1423.77" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-7"></path>
-              <path d="M1693.03,1378.11 C1693.03,1378.11 1691.85,1374.64 1691.85,1374.64 C1692.96,1377.80 1696.43,1398.54 1696.52,1399.63 C1696.77,1402.90 1697.38,1423.88 1697.61,1432.57 C1697.81,1438.06 1697.92,1438.51 1698.42,1439.02 C1699.61,1437.92 1700.87,1434.48 1701.62,1431.32 C1705.05,1416.39 1709.56,1396.62 1712.24,1388.64 C1714.20,1383.00 1716.68,1377.31 1717.86,1376.80 C1718.22,1376.65 1719.21,1376.40 1720.81,1376.05 C1722.68,1377.94 1724.36,1380.94 1725.50,1384.81 C1727.39,1391.61 1728.21,1400.34 1728.91,1412.05 C1729.16,1415.64 1729.77,1423.93 1730.60,1426.66 C1731.28,1428.80 1735.54,1431.91 1736.47,1431.98 C1737.00,1432.01 1738.20,1431.87 1740.09,1431.55" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-8"></path>
-              <path d="M1744.94,1392.91 C1746.26,1396.72 1746.90,1400.45 1746.85,1405.40 C1746.76,1411.10 1745.81,1434.10 1746.15,1436.42 C1746.21,1436.82 1746.33,1437.42 1746.52,1438.22 C1746.52,1438.22 1748.69,1438.95 1748.69,1438.95 C1750.59,1436.74 1751.55,1435.13 1752.10,1432.98 C1752.31,1432.16 1752.52,1431.35 1752.74,1430.53" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-9"></path>
-              <path d="M1750.24,1354.14 C1749.97,1351.86 1749.64,1349.82 1749.23,1348.41 C1748.65,1346.52 1747.51,1344.48 1746.20,1343.00 C1745.08,1341.78 1743.20,1340.57 1742.26,1340.50 C1741.39,1340.46 1740.38,1341.10 1740.15,1341.56" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-10"></path>
-              <path d="M1772.74,1410.89 C1772.74,1410.89 1769.02,1411.39 1769.02,1411.39 C1770.66,1409.98 1785.58,1400.23 1789.78,1395.98 C1792.12,1393.57 1795.74,1387.39 1796.20,1385.63 C1796.58,1384.05 1796.20,1381.91 1795.37,1381.35 C1794.25,1380.67 1786.49,1381.35 1784.08,1382.47 C1781.93,1383.50 1778.50,1386.42 1776.65,1388.68 C1774.60,1391.24 1771.57,1397.03 1770.58,1399.80 C1768.64,1405.35 1766.76,1417.60 1767.49,1423.26 C1767.85,1425.84 1769.96,1432.26 1772.26,1435.08 C1773.62,1436.69 1776.65,1438.77 1778.63,1439.44 C1782.07,1440.56 1789.01,1440.11 1791.73,1439.45 C1794.32,1438.80 1801.78,1435.89 1804.96,1434.36 C1809.98,1431.92 1823.85,1421.97 1830.09,1417.27" fill="none" stroke="#c6c9f1" stroke-width="5.00" stroke-opacity="1.00" stroke-linejoin="round" class="svg-elem-11"></path>
-              </g>
-              </svg>
-  
-            <h4 class="text-center my-4"><a href="work.html">Product designer</a> specializing in UX, design strategy, and mentorship.</h4>
-            <br>
-              <button class="btn btn-primary btn-lg mx-auto">Contact Me</button>                      
-          </div>
-        </div>
-      </main>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- footer -->
-    <footer class="container-fluid d-flex flex-wrap justify-content-between p-4 mt-auto">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0">&copy; Stefanie. <a href="https://github.com/withanf/withanf.github.io/issues" target="_blank">Report a bug</a></span>
-      </div>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-      <button class="btn btn-secondary btn-sm" onclick="pauseVideo()" aria-label="Pause">Pause Video</button>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex align-items-center">
-        <li><a href="mailto:stefaniesequeira@pm.me" target="_blank" class="socials"><i class="bi bi-envelope-fill fs-4"></i></a></li>
-        <li class="ms-3"><a class="fs-5 socials" href="https://bsky.app/profile/stefwithanf.bsky.social" target="_blank"><svg fill="none" viewBox="0 0 64 57" style="width: 26px; height: 24px;" class="icon-color"><path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"></path></svg></a></li>
-        <li class="ms-3"><a href="https://dribbble.com/stefaniewithanf" target="_blank" class="socials"><i class="bi bi-dribbble fs-4"></i></a></li>
-        <li class="ms-3"><a href="https://www.linkedin.com/in/stefaniesequeira/" target="_blank"class="socials"><i class="bi bi-linkedin fs-4"></i></a></li>
-      </ul>
-    </footer>
-
-      <!-- For the tooltips: data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" title="Mail" -->
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script> -->
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- <script src="https://unpkg.com/react-motion/build/react-motion.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script> -->
-    <!-- <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script> -->
-
-    <!-- play/pause button for video -->
-    <script>
-      // Get the video
-      var video = document.getElementById("indexVideo");
-      
-      // Get the button
-      var btn = document.getElementById("myBtn");
-      
-      // Pause and play the video, and change the button text
-      function pauseVideo() {
-        if (video.paused) {
-          video.play();
-          btn.innerHTML = "Pause";
-        } else {
-          video.pause();
-          btn.innerHTML = "Play";
-        }
-      }
-    </script>
-
-    <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
-
-    <!-- loading screen -->
-    <script>
-      $(window).on('load', function () {
-        $('#loading').hide();
-      }) 
-    </script>
- 
-  </body>
+</body>
 
 </html>
