@@ -83,7 +83,7 @@ h6 {
 
 .card {
   border-radius: 8px;
-  /* padding: 5px 25px; */
+  padding: 0;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(16px);
@@ -93,6 +93,14 @@ h6 {
 
 .border, .border-bottom, .border-top {
   border-color: rgba(209, 195, 187, 0.9) !important;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-weight: 700;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* color: var(--accent-color); */
+  margin-bottom: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -433,8 +441,8 @@ h6 {
   margin-bottom: 10px;
 }
 
-.portfolio-page {
-
+.featured .card {
+  max-height: 25%;
 }
 
 /*--------------------------------------------------------------
@@ -475,6 +483,11 @@ section,
 .section-title p {
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Featured Section
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
