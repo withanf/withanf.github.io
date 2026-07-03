@@ -1,6 +1,6 @@
 /* Fonts */
 :root {
-  --default-font: "IBM Plex Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Lato",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Ovo",  serif;
   --nav-font: "Ovo",  sans-serif;
 }
@@ -8,22 +8,24 @@
 /* Global colors */
 :root { 
   --background-color: #ece1d8; 
+  --background-color: rgb(236, 225, 216); 
   --default-color: #101010; /* Text content */
   --heading-color: #000000; /* Headings and display */
-  --accent-color: #50b1b1;
+  --accent-color: #0098b3;
   --surface-color: #ffffff;
   --contrast-color: #ffffff; /* For accessibility - test this */
   /* --border-color: #8d837c; */
+
 }
 
 /* Nav colors */
 :root {
-  --nav-color: #5b5b5b;  /* main navmenu links */
-  --nav-hover-color: #000000;
+  --nav-color: #000000;  /* main navmenu links */
+  --nav-hover-color: var(--accent-color);
   --nav-mobile-background-color: #f5f5f5; /* background for mobile */
-  --nav-dropdown-background-color: #ffffff;
-  --nav-dropdown-color: #5b5b5b;
-  --nav-dropdown-hover-color: #000000;
+  /* --nav-dropdown-background-color: #ffffff; */
+  /* --nav-dropdown-color: #5b5b5b; */
+  /* --nav-dropdown-hover-color: #000000; */
 }
 
 /* Color blocks for sections */
@@ -51,20 +53,49 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background: url(/assets/img/spatulata.png) repeat fixed var(--background-color);
   font-family: var(--default-font);
 }
 
 a {
   color: var(--accent-color);
   text-decoration: none;
-  transition: 0.3s;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1;
 }
 
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+main a:hover {
+  /* background-color: hotpink; */
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  /* transition: all 0.3s ease-in-out; */
 }
 
+/* This doesn't really look that much like a line being drawn but whatever not important rn */
+main a:not(.btn), footer a {
+  display:inline;
+  background-image:url(/assets/img/underline.svg),url(/img/site/underline-primary.svg);
+  background-repeat:no-repeat;
+  background-position: 0 105%;
+  background-size:1px 4px,0 0;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+main a:not(.btn):active,
+main a:not(.btn):focus,
+main a:not(.btn):hover,
+footer a:active,
+footer a:focus,
+footer a:hover {
+  background-position:0 105%;
+  background-image:url(/assets/img/underline.svg);
+  background-repeat:repeat-x,no-repeat;
+  background-position: 0 105%;
+  background-size:680px 4px,0 0;
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -95,19 +126,11 @@ h6 {
   border-color: rgba(209, 195, 187, 0.9) !important;
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  font-weight: 700;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  /* color: var(--accent-color); */
-  margin-bottom: 2em;
-}
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
+  color: var(--heading-color);
   /* background-color: var(--background-color); */
   padding: 20px 0;
   transition: all 0.5s;
@@ -122,6 +145,10 @@ h6 {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header a:hover {
+  border: none;
 }
 
 .header .logo {
@@ -416,6 +443,108 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Mask Button
+--------------------------------------------------------------*/
+/* Mask button with brush stroke animation adapted from https://codepen.io/pizza3/pen/qmerBv?editors=1100 */
+.btn-mask {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  transition: 0.3s;
+}
+
+.btn-mask .mas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.btn-mask button {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: auto;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .btn-mask button {
+    -webkit-mask: url("/assets/img/wipe-sprite.png");
+    mask: url("/assets/img/wipe-sprite.png");
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%;
+    -webkit-animation: btnMaskIn 0.7s steps(29) forwards;
+    animation: btnMaskIn 0.7s steps(29) forwards;
+  }
+
+  .btn-mask button:hover {
+    -webkit-animation: btnMaskOut 0.7s steps(29) forwards;
+    animation: btnMaskOut 0.7s steps(29) forwards;
+  }
+
+  @-webkit-keyframes btnMaskIn {
+    from { -webkit-mask-position: 0 0; mask-position: 0 0; }
+    to   { -webkit-mask-position: 100% 0; mask-position: 100% 0; }
+  }
+  @keyframes btnMaskIn {
+    from { -webkit-mask-position: 0 0; mask-position: 0 0; }
+    to   { -webkit-mask-position: 100% 0; mask-position: 100% 0; }
+  }
+  @-webkit-keyframes btnMaskOut {
+    from { -webkit-mask-position: 100% 0; mask-position: 100% 0; }
+    to   { -webkit-mask-position: 0 0; mask-position: 0 0; }
+  }
+  @keyframes btnMaskOut {
+    from { -webkit-mask-position: 100% 0; mask-position: 100% 0; }
+    to   { -webkit-mask-position: 0 0; mask-position: 0 0; }
+  }
+}
+
+/* Mobile fallback */
+@media (max-width: 767px) {
+  .btn-mask button {
+    padding: 0 16px;
+    background: #000;
+    transition: background-color 0.2s, opacity 0.2s;
+  }
+
+  .btn-mask button:active {
+    background: #222;
+    opacity: 0.9;
+  }
+}
+
+/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -429,7 +558,7 @@ h6 {
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   padding: 120px 0;
   text-align: center;
   position: relative;
@@ -451,7 +580,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
@@ -483,10 +612,6 @@ section,
 .section-title p {
   margin-bottom: 0;
 }
-
-/*--------------------------------------------------------------
-# Featured Section
---------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
@@ -521,12 +646,12 @@ section,
   margin: 0 10px;
   line-height: 1;
   margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  border-bottom: 2px solid var(--default-color);
+  border-bottom: 1px solid var(--default-color);
   padding-bottom: 3px;
 }
 
