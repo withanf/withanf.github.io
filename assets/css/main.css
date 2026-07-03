@@ -452,7 +452,7 @@ h6 {
   width: auto;
   height: 50px;
   overflow: hidden;
-  border: 1px solid #000;
+  border: 1px solid var(--accent-color);
   border-radius: 8px;
   font-family: 'Lato', sans-serif;
   transition: 0.3s;
@@ -469,7 +469,7 @@ h6 {
   width: 100%;
   height: 100%;
   padding: 0 20px;
-  color: #000;
+  color: var(--accent-color);
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -489,7 +489,7 @@ h6 {
   border: none;
   cursor: pointer;
   color: #fff;
-  background: #000;
+  background: var(--accent-color);
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   font-weight: 700;
